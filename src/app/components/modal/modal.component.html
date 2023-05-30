@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h5 class="modal-title">Gracias Por su Compra!</h5>
+    <p class="modal-title">Compra Ok!</p>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <h3>Artículos Comprados:</h3>
+    <hr>
+    <div *ngFor="let item of items">
+        <p><b>Name</b>{{item.name}} <b>Units</b>{{item.quantity}} <b>Price/unit</b> $ {{item.unit_amount.value}} </p>
+    </div>
+    <hr>
+    <h3><b>Total:</b>$ {{amount}}</h3>
+    <h3>Cuenta pagadora:</h3>
+    <p>{{email}}</p>
+    <p>{{name}} {{surname}}</p>
+</div>

@@ -1,0 +1,34 @@
+.usuarioinfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info {
+    grid-area: 1 / 1 / 1 / 1;
+    padding: 0;
+    margin: 0;
+}
+
+.usuarioinfo h2,
+.usuarioinfo p {
+    margin: 0;
+    padding: 0;
+}
+
+.usuarioinfo .botonvolver {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.usuarioinfo .botonvolver .cursor {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin-top: 10px;
+}

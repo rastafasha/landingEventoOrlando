@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+footer {
+    background-color: #212121;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer h4 {
+    font-family: 'GothamNarrow-Medium';
+    font-size: 30px;
+    color: #e4e4e4;
+}
+
+footer h5 {
+    font-family: 'futura medium bt';
+    font-size: 17px;
+    color: #797979;
+    padding-top: 4px;
+}
+
+footer p {
+    font-family: 'Gotham Narrow Book';
+    font-size: 16px;
+    color: #797979;
+}
+
+footer p a {
+    font-family: 'Gotham Narrow Book';
+    font-size: 16px;
+    color: #dfdfdf;
+}
+
+footer i {
+    font-size: 25px !important;
+    margin-right: 15px;
+    color: #a5a5a5;
+    float: left;
+}
+
+.credits {
+    background-color: #3c3938;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.credits p {
+    font-family: 'Gotham Narrow Book';
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+@media(max-width:768px) {
+    footer img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    footer h4 {
+        padding-top: 20px;
+    }
+    .credits {
+        background-color: #3c3938;
+        height: auto;
+        padding: 20px
+    }
+}

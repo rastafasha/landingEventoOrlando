@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+@import url("bootstrap.min.css");
+@import url("animate.min.css");
+@import url("ionicons.min.css");
+@import url("font-awesome.min.css");
+@import url("fonts.css");
+@import url("anim.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("botones.css");
+@import url("formulario.css");
+@import url("cabinas.css");
+@import url("carousel.css");
+@import url("video.css");
+@import url("ursilandingstyle.css");
+:root {
+    --vinotinto: #930b32;
+    --font: 'Source Sans Pro', sans-serif;
+    --font-size-article: 14px;
+    --font-size-title-article: 28px;
+    --font-size-title-section-side: 22px;
+    --font-size-user: 20px;
+    --border-radius: 30px;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.grac {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.grac p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.grac :nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.cursor:hover {
+    color: var(--vinotinto)!important;
+}
+
+.btn-outline-danger {
+    color: var(--vinotinto);
+    border: 1px solid var(--vinotinto);
+    background: transparent;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    border: 1px solid var(--vinotinto);
+    background: var(--vinotinto);
+    background-color: var(--vinotinto);
+}
+
+.btn-danger {
+    color: #fff;
+    border: 1px solid var(--vinotinto);
+    background: var(--vinotinto);
+    background-color: var(--vinotinto);
+}
+
+.btn-outline-success {
+    color: green;
+    border: 1px solid green;
+    background: transparent;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    border: 1px solid green;
+    background: green;
+    background-color: green;
+}
+
+.modal-backdrop .modal-content {
+    top: 100px !important;
+}

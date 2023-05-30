@@ -1,0 +1,44 @@
+<!-- navegacion -->
+<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll logo" routerLink="/"></a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container usuarioinfo">
+
+    <div class="info">
+        <h2>Bienvenido: </h2>
+        <p>{{user.firstName}} {{user.lastName}}</p>
+        <p>{{user.email}} </p>
+    </div>
+    <div class="botonvolver">
+        <a class="cursor" routerLink="/">Volver al inicio</a>
+    </div>
+</div>
+
+<section class="boxed-sm padding" id="cursos">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div *ngFor="let product of products">
+                    <div class="col-xs-6 col-sm-4">
+                        <app-product-item [product]="product"></app-product-item>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <app-cart></app-cart>
+            </div>
+        </div>
+    </div>
+</section>

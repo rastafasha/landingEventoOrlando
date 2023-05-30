@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-family: 'GothamNarrow-Medium';
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.control-label {
+    font-family: 'GothamNarrow-Medium';
+    font-size: 14px;
+    color: #848484;
+}
+
+.form-control:focus {
+    color: var(--vinotinto);
+    background-color: #fff;
+    box-shadow: none;
+}
+
+textarea {
+    border-radius: 0 !important;
+    height: 100px;
+    margin-top: 10px;
+    color: #333;
+    resize: none;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #ccc;
+    border-color: var(--vinotinto);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.boton {
+    font-family: 'GothamNarrow-Medium';
+    text-align: center;
+    font-size: 18px;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+    background-color: #fafafa;
+    padding: 15px;
+    padding-top: 15px;
+    border: 1px solid var(--vinotinto);
+    margin-top: 25px;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.boton:hover {
+    color: #fff;
+    background-color: var(--vinotinto);
+    border: 1px solid var(--vinotinto);
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.boton2 {
+    font-family: 'GothamNarrow-Medium';
+    text-align: center;
+    font-size: 18px;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+    background-color: #fafafa;
+    padding: 15px;
+    padding-top: 15px;
+    border: 1px solid var(--vinotinto);
+    margin-top: 0px;
+    margin-bottom: 35px;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.boton2:hover {
+    color: #fff;
+    background-color: var(--vinotinto);
+    border: 1px solid var(--vinotinto);
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.camp {
+    border-radius: 0 !important;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.ContactoContainer .camp2 {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.cuadroInput {
+    width: 100%;
+    height: 40px;
+    text-indent: 5px;
+    font-family: 'Poppins', sans-serif !important;
+    height: 40px;
+    font-size: 16px;
+    text-indent: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: thin solid #ccc;
+    padding-left: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.panel-footer {
+    background-color: none !important;
+}
+
+select {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 10px;
+    color: #333;
+    background-color: #fff;
+}
+
+select:hover {
+    border-color: var(--vinotinto);
+}
+
+select option {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    color: #333;
+    padding: 5px;
+}
+
+select option:hover {
+    background: var(--vinotinto) !important;
+    color: #333;
+}
+
+.fechass {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+.fechass ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    padding-left: 20px;
+}
+
+.fechass ul li {
+    display: list-item;
+    line-height: 27px;
+    font-size: 14px;
+}
+
+.fechass ul li input[type=radio] {
+    position: absolute;
+}

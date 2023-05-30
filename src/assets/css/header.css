@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+header {
+    position: relative;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    background-image: url(../images/slider/orlandofl.jpeg);
+    background-position: center top;
+    background-size: cover;
+    background-color: #fff;
+}
+
+header .header-content {
+    position: absolute;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+    z-index: 90;
+}
+
+header .header-content .inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header .header-content .inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    background-image: url(../images/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 42px;
+    width: 270px;
+    position: relative;
+    top: 3px;
+    -webkit-transition: all.2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.logo2 {
+    background-image: url(../images/logo.png);
+}
+
+@media(max-width:768px) {
+    .logo {
+        height: 29px;
+        width: 244px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    .navbar-default.affix {
+        border-bottom: 1px solid #fff;
+        background-color: rgba(34, 34, 34, .8);
+        height: auto !important;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1220px) {
+    .logo {
+        top: 20px;
+        left: 15px;
+    }
+}
+
+.navbar-brand {
+    float: left;
+    height: 65px;
+    padding: 0 !important;
+    font-size: 18px;
+    line-height: normal !important;
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    header .header-content .inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+    header .header-content .inner h1 {
+        font-size: 53px;
+    }
+    header .header-content .inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+.navbar-default {
+    border-color: rgba(35, 35, 35, .05);
+    font-family: 'futura medium bt';
+    background-color: #222;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.navbar-header>.navbar-brand {
+    font-family: 'futura medium bt';
+    color: var(--vinotinto);
+    padding: 15px;
+    -webkit-transition: padding .2s ease-in;
+    -moz-transition: padding .2s ease-in;
+    transition: padding .2s ease-in;
+}
+
+.navbar-header>.navbar-brand:hover,
+.navbar-header>.navbar-brand:focus {
+    color: #8b27b0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #181818;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
+    font-family: 'futura light bt';
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #eee;
+    text-shadow: none !important;
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: var(--vinotinto);
+}
+
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: var(--vinotinto) !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: transparent;
+        background-color: transparent;
+        min-height: 60px;
+    }
+    .navbar-header>.navbar-brand {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 19px;
+    }
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #f4f4f4;
+    }
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        letter-spacing: 1.1px;
+        text-shadow: 1px 1px 1px rgba(60, 60, 60, 0.7);
+    }
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fefefe;
+    }
+    .navbar-default.affix {
+        border-bottom: 1px solid #fff;
+        background-color: rgba(250, 250, 250, .7);
+        min-height: 70px;
+        z-index: 999999;
+        position: fixed;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: var(--vinotinto);
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #8b27b0;
+    }
+    .navbar-default.affix .nav>li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #333;
+        text-shadow: 1px 1px 1px rgba(30, 30, 30, 0.7);
+    }
+    .navbar-default.affix .nav>li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: var(--vinotinto);
+    }
+}

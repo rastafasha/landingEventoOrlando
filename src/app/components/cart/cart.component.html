@@ -1,0 +1,35 @@
+<div *ngIf="cartItems.length < 1">
+    <div class="alert alert-info text-center">
+        <h5>Pedido Vacio</h5>
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+</div>
+<div *ngIf="cartItems.length > 0">
+    <div class="alert alert-info text-center">
+        <h4>Tu Pedido</h4>
+    </div>
+    <div class="text-center">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let item of cartItems; index as i">
+                <div class="row">
+                    <div class="col-md-10">
+                        <app-cart-item [cartItem]="item"></app-cart-item>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa fa-trash-o" (click)="deletItem(i)"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="alert alert-warning text-center">
+        <strong>Total: ${{total}}</strong>
+    </div>
+
+    <button class="btn btn-outline-danger btn-block col-12 mb-2" (click)="emptyCart()">
+    <i class="fa fa-ban"></i> Vaciar Pedido
+  </button>
+    <br>
+    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+
+</div>

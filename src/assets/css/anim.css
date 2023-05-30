@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+body{
+	-webkit-animation:body-animacion 1s 1 ease;
+			-moz-animation:body-animacion 1s 1 ease;
+			-o-animation:body-animacion 1s 1 ease;
+			-ms-animation:body-animacion 1s 1 ease;
+			animation:body-animacion 1s 1 ease;
+
+}
+
+@-ms-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+/*
+
+.navbar-default{
+	-webkit-animation: navbar-anim 20s 1s 1 ease-in-out;
+			-moz-animation:navbar-anim 20s 1s 1 ease-in-out;
+			-o-animation:navbar-anim 20s 1s 1 ease-in-out;
+			-ms-animation:navbar-anim 20s 1s 1 ease-in-out;
+			animation:navbar-anim 20s 1s 1 ease-in-out;
+            
+
+}
+
+@-ms-keyframes navbar-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-o-keyframes navbar-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-moz-keyframes navbar-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes navbar-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+
+.header-content{
+	-webkit-animation: header-content-anim 20s 1s 1 ease-in-out;
+			-moz-animation:header-content-anim 20s 1s 1 ease-in-out;
+			-o-animation:header-content-anim 20s 1s 1 ease-in-out;
+			-ms-animation:header-content-anim 20s 1s 1 ease-in-out;
+			animation:header-content-anim 20s 1s 1 ease-in-out;
+            
+
+}
+
+@-ms-keyframes header-content-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-o-keyframes header-content-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-moz-keyframes header-content-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes header-content-anim {
+	0%   {opacity:0; }
+	50%   {opacity:0; }
+	100% {opacity:1;}
+}
+
+#video-background{
+    -webkit-animation: video-anim 11s 1s 1 ease-in-out;
+			-moz-animation:video-anim 11s 1s 1 ease-in-out;
+			-o-animation:video-anim 11s 1s 1 ease-in-out;
+			-ms-animation:video-anim 11s 1s 1 ease-in-out;
+			animation:video-anim 11s 1s 1 ease-in-out;
+}
+
+@-ms-keyframes video-anim {
+	0%   {opacity:1; }
+    50%   {opacity:1; }
+    70% {opacity:0.3; }
+	100% {opacity:0;}
+}
+
+@-o-keyframes video-anim {
+	0%   {opacity:1; }
+    50%   {opacity:1; }
+    70% {opacity:0.3; }
+	100% {opacity:0;}
+}
+
+@-moz-keyframes video-anim {
+	0%   {opacity:1; }
+    50%   {opacity:1; }
+    70% {opacity:0.3; }
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes video-anim {
+	0%   {opacity:1; }
+    50%   {opacity:1; }
+    70% {opacity:0.3; }
+	100% {opacity:0;}
+}
+
+
+
+*/
+.Up {
+    -webkit-animation:Up-animacion 1s 1 ;
+			-moz-animation:Up-animacion 1s 1 ;
+			-o-animation:Up-animacion 1s 1 ;
+			-ms-animation:Up-animacion 1s 1 ;
+			animation:Up-animacion 1s 1 ;
+			-webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;  
+}
+
+
+@media(max-width:768px) {
+    
+    .navbar-default{
+	-webkit-animation: navbar-anim 1s 1s 1 ease-out;
+			-moz-animation:navbar-anim 1s 1s 1 ease-out;
+			-o-animation:navbar-anim 1s 1s 1 ease-out;
+			-ms-animation:navbar-anim 1s 1s 1 ease-out;
+			animation:navbar-anim 1s 1s 1 ease-out;
+            
+
+}
+    
+    .header-content{
+	-webkit-animation: header-content-anim 1s 1s 1 ease-out;
+			-moz-animation:header-content-anim 1s 1s 1 ease-out;
+			-o-animation:header-content-anim 1s 1s 1 ease-out;
+			-ms-animation:header-content-anim 1s 1s 1 ease-out;
+			animation:header-content-anim 1s 1s 1 ease-out;
+            
+
+}
+    
+}
+

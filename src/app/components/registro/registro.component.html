@@ -1,0 +1,75 @@
+<!---formulario cotizacion--->
+
+<section class="flex" id="registro">
+    <div class="linea col-xs-hidden col-sm-3  wow fadeInLeft"></div>
+    <div class=" col-xs-12 col-sm-6 text-center wow fadeInUp">
+        <h2 class="margin-top-0">¿Qué esperas?</h2>
+        <h4 class="margin-top-0">Registrese Aquí</h4>
+        <p style="text-align:center"> Complete los datos para poder comprar el cupo:</p>
+        <p style="text-align:center"> Los campos con <span class="requerido">*</span> son obligatorios</p>
+    </div>
+    <div class="linea col-xs-hidden col-sm-3 wow fadeIn"></div>
+</section>
+
+<section class="flex">
+    <div class="container">
+        <!-- <form action="https://svcbmf.net/cabaleiroyasoc/cabaleiroServer/api_todo/create/" id="myForm" role="form" name="registro" data-toggle="validator" method="post" accept-charset="utf-8"> -->
+        <form [formGroup]="registerForm" (ngSubmit)="crearUsuario()" id="myForm" role="form" name="registro" data-toggle="validator" method="post" accept-charset="utf-8">
+            <!-----informacion basica----->
+            <div class="datosbasicos">
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Nombre</label>
+                    <input type="text" required="required" class="form-control" formControlName="firstName" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Apellido</label>
+                    <input type="text" required="required" class="form-control" formControlName="lastName" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Estado</label>
+                    <input type="text" required="required" class="form-control" formControlName="estado" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>País</label>
+                    <input type="text" required="required" class="form-control" formControlName="pais" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label">Teléfono</label>
+                    <input type="text" required="required" class="form-control" formControlName="telefono" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Celular</label>
+                    <input type="text" required="required" class="form-control" formControlName="movil" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Email</label>
+                    <input type="email" required="required" class="form-control" formControlName="email" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label class="control-label"><span class="requerido">*</span>Donde se entero del Evento?</label>
+
+                    <select formControlName="dondeSeEntero" id="input" class="form-control" required="required">
+                      <option value="">Seleccione</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Google">Google</option>
+                      <option value="web Ursi">Sitio Web Ursi</option>
+                  </select>
+
+                </div>
+            </div>
+
+
+            <div class="clear"></div>
+
+            <input type="hidden" formControlName="id">
+            <input type="submit" (click)="crearUsuario()" value="Registrarme y Comprar el curso" class="col-xs-12 col-sm-4 col-sm-push-4 boton">
+
+        </form>
+    </div>
+
+</section>
+<div class="clear"></div>
+<section>
+    <img src="./assets/images/final.jpg" alt="Ursi Galletti Orgebrería">
+</section>

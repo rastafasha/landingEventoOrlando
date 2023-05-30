@@ -1,0 +1,11 @@
+<div class="card text-center mb-3 itemproductt">
+    <div class="imageprod">
+        <img [src]="product.image" alt="">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <!-- <p class="card-text descr">{{product.description}}</p> -->
+        <p class="card-text">${{product.price}}</p>
+        <button href="#" class="btn btn-outline-success" (click)="addToCart()"> <i class="fa fa-cart"></i> Agregar al Carrito</button>
+    </div>
+</div>

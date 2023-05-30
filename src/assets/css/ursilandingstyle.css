@@ -1,0 +1,498 @@
+/*----colores--*/
+
+:root {
+    --vinotinto: #930b32;
+    --white: #f2f2f2;
+    --font-text: 'Gotham Narrow Book';
+    --font-title: 'futura light bt';
+    --font-text-color: #6d6d6d;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* font-family: 'Gotham Narrow Book'; */
+    font-family: var(--font-text);
+    background-color: #fff;
+    webkit-tap-highlight-color: #222;
+}
+
+hr {
+    max-width: 80px;
+    border-width: 3px;
+    opacity: 0.09;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+a {
+    color: var(--vinotinto);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: var(--vinotinto);
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'futura', sans-serif;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 80px;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0
+}
+
+h2 {
+    font-family: var(--font-title);
+    color: var(--vinotinto);
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-size: 54px;
+    padding: 0;
+    margin: 0;
+    color: var(--vinotinto);
+}
+
+h4 {
+    font-family: var(--font-title);
+    font-size: 32px;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0
+}
+
+h5 {
+    font-family: var(--font-title);
+    font-size: 21px;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0
+}
+
+h6 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0
+}
+
+p {
+    font-family: var(--font-text);
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: var(--font-text-color);
+    line-height: 27px;
+}
+
+b,
+ul li b {
+    font-family: var(--font-title);
+    color: #000
+}
+
+ul li {
+    font-family: var(--font-title);
+    color: var(--font-text-color)
+}
+
+@media(max-width:768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: x-large;
+    }
+}
+
+.wide-space {
+    letter-spacing: 1.6px;
+}
+
+.icon-lg {
+    font-size: 50px;
+    line-height: 18px;
+}
+
+.bg-primary {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.imagen-inicio {
+    background-color: #fff;
+    height: 274px;
+    padding-top: 240px;
+}
+
+@media(max-width:768px) {
+    .imagen-inicio {
+        background-image: none;
+        height: 274px;
+        padding-top: 60px;
+    }
+    #video-background {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1340px) {
+    .imagen-inicio {
+        height: 274px;
+        padding-top: 170px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1800px) {
+    .imagen-inicio {
+        background-position: center -4px;
+        height: 274px;
+        padding-top: 200px;
+    }
+}
+
+.bg-dark {
+    color: #eee;
+    background-color: #222;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    text-transform: none;
+}
+
+.text-faded {
+    color: rgba(245, 245, 245, 0.7);
+}
+
+.text-dark {
+    color: #111;
+}
+
+.text-primary {
+    color: var(--vinotinto);
+}
+
+
+/* .modal-content {
+    background-color: #1d1d1d;
+} */
+
+.linea {
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 30px;
+}
+
+@media(max-width:768px) {
+    .linea {
+        display: none
+    }
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 0;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    flex-direction: column;
+    flex: 1;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.feature {
+    margin: 50px auto 0;
+    max-width: 400px;
+}
+
+@media(min-width:992px) {
+    .feature {
+        margin: 20px auto 0;
+    }
+}
+
+.feature p {
+    margin-bottom: 0;
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.gallery-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    overflow: hidden;
+}
+
+.gallery-box .gallery-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(44, 44, 44, .8);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.gallery-box .gallery-box-caption .gallery-box-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.gallery-box:hover .gallery-box-caption {
+    opacity: 1;
+}
+
+.gallery-box:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.gallery-box img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.no-gutter>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+.table td {
+    border-top: 1px solid #e2e2e2;
+    font-size: 18px;
+    padding: 15px !important;
+}
+
+
+/*----*/
+
+.initerario {
+    background-image: url(../images/fondo-mapa.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+}
+
+.cuadrofondo {
+    background: url(../images/taller/taller1-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 396px;
+    text-align: right;
+    padding: 90px 40px;
+}
+
+.cuadrofondo h4,
+.cuadrofondo2 h4,
+.cuadrofondo3 h4 {
+    font-family: 'Arial';
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 27px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.cuadrofondo p,
+.cuadrofondo2 p,
+.cuadrofondo3 p {
+    font-family: 'Gotham Narrow Book';
+    color: #000;
+    font-size: 20px;
+}
+
+.cuadrofondo2 {
+    background: url(../images/taller/taller2-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 396px;
+    text-align: left;
+    padding: 90px 40px
+}
+
+.cuadrofondo3 {
+    background: url(../images/taller/taller3-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 396px;
+    text-align: right;
+    padding: 90px 40px
+}
+
+@media(max-width:768px) {
+    .cuadrofondo,
+    .cuadrofondo2,
+    .cuadrofondo3 {
+        height: auto;
+        padding: 40px
+    }
+}
+
+.aproveche {}
+
+.aproveche h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #b3daee;
+}
+
+.aproveche p {
+    font-size: 18px;
+    color: #b2b2b2;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.enamorate {
+    height: 430px;
+    margin-bottom: 20px;
+}
+
+.enamorate h4 {
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.enamorate p {
+    font-size: 16px;
+    color: #000;
+}
+
+.enamorate ul {
+    margin-left: 20px;
+}
+
+.condiciones {
+    background-color: #f7f7f7;
+}
+
+.condiciones h4 {
+    font-family: 'FuturaPTDemi';
+    font-size: 30px;
+    text-align: center;
+    color: #5b5b5b;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.condiciones p {
+    font-family: 'Arial';
+    font-size: 14px;
+    text-align: center;
+    color: #939393;
+}
+
+.modal-body h3 {
+    font-size: 24px !important;
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+.modal {
+    top: 90px;
+    z-index: 999999;
+}
